@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<RelativeLayout
+    android:background="@drawable/update_profile_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout
+    android:background="@drawable/update_profile_bg"
+    android:id="@+id/rlHeader"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_180sdp">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardMain"
+        android:layout_gravity="center"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        app:cardCornerRadius="200dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            app:cardCornerRadius="200dp"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:id="@+id/imgUser"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/logo"
+                android:scaleType="centerCrop"/>
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/btnEditProfile"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:translationZ="10dp"
+        android:layout_marginTop="-30dp"
+        android:layout_below="@id/cardMain"
+        android:src="@drawable/ic_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
+
+    <LinearLayout
+        android:padding="@dimen/_25sdp"
+        android:background="@drawable/white_round_top"
+        android:layout_below="@id/rlHeader"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:textColor="#FF6F3E"
+            android:textFontWeight="400"
+            android:textSize="@dimen/_12ssp"
+            android:fontFamily="@font/popins_regular"
+            android:gravity="center|left"
+            android:drawablePadding="@dimen/_10sdp"
+            android:drawableTint="#FF6F3E"
+            android:drawableLeft="@drawable/ic_person"
+            android:text="Username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edtUsername"
+            android:textColor="@color/black"
+            android:enabled="false"
+            android:textSize="@dimen/_13ssp"
+            android:fontFamily="@font/popins_semi_bold"
+            android:inputType="textPersonName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></androidx.appcompat.widget.AppCompatEditText>
+
+        <TextView
+            android:textColor="#FF6F3E"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:textFontWeight="400"
+            android:textSize="@dimen/_12ssp"
+            android:fontFamily="@font/popins_regular"
+            android:gravity="center|left"
+            android:drawablePadding="@dimen/_10sdp"
+            android:drawableTint="#FF6F3E"
+            android:drawableLeft="@drawable/email"
+            android:text="Email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edtEmail"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_13ssp"
+            android:enabled="false"
+            android:fontFamily="@font/popins_semi_bold"
+            android:inputType="textEmailAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></androidx.appcompat.widget.AppCompatEditText>
+
+        <TextView
+            android:textColor="#FF6F3E"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:textFontWeight="400"
+            android:textSize="@dimen/_12ssp"
+            android:fontFamily="@font/popins_regular"
+            android:gravity="center|left"
+            android:drawablePadding="@dimen/_10sdp"
+            android:drawableTint="#FF6F3E"
+            android:drawableLeft="@drawable/ic_phone"
+            android:text="Phone Number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:textSize="@dimen/_13ssp"
+            android:fontFamily="@font/popins_semi_bold"
+            android:maxLength="10"
+            android:enabled="false"
+            android:id="@+id/edtPhone"
+            android:inputType="phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:textColor="@color/white"
+            android:text="Save"
+            android:id="@+id/btnLogin"
+            android:shadowColor="#E2561980"
+            app:rippleColor="@color/orange"
+            app:backgroundTint="#E25619"
+            android:textAllCaps="false"
+            android:textSize="@dimen/_13ssp"
+            android:fontFamily="@font/regular_tensor"
+            android:layout_margin="@dimen/_20sdp"
+            app:cornerRadius="@dimen/_20sdp"
+            android:layout_height="@dimen/_45sdp" />
+
+    </LinearLayout>
+</RelativeLayout>
+</layout>

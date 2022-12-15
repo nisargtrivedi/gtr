@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/rlHeader"
+        android:background="@color/sign_up_color"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp">
+        <ImageView
+            android:id="@+id/imgBack"
+            android:layout_centerVertical="true"
+            android:scaleType="center"
+            android:src="@drawable/back_white"
+            android:layout_width="@dimen/_45sdp"
+            android:layout_height="match_parent">
+        </ImageView>
+
+        <TextView
+            android:layout_toRightOf="@id/imgBack"
+            android:textSize="@dimen/_13ssp"
+            android:paddingLeft="@dimen/_10sdp"
+            android:fontFamily="@font/popins_semi_bold"
+            android:textColor="@color/white"
+            android:text="Settings"
+            android:layout_centerVertical="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+
+    </RelativeLayout>
+    <ListView
+        tools:listitem="@layout/row_textview"
+        android:id="@+id/lstMenu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ListView>
+
+</LinearLayout>
+</layout>

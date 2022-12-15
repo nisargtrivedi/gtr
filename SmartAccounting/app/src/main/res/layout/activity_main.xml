@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:id="@+id/frm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:translationZ="10dp"
+            android:layout_marginRight="-10dp"
+            android:layout_marginTop="-50dp"
+            android:layout_marginLeft="30dp"
+            android:src="@drawable/top_two"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></ImageView>
+
+        <ImageView
+            android:layout_marginTop="-240dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/shape_two"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></ImageView>
+    </FrameLayout>
+    <ImageView
+        android:layout_marginLeft="-5dp"
+        android:id="@+id/leftCrop"
+        android:layout_below="@id/frm"
+        android:layout_marginTop="-80dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/crop_rect"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_80sdp"></ImageView>
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_below="@id/leftCrop"
+        android:scaleType="fitCenter"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:src="@drawable/logo"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_100sdp"></ImageView>
+<ImageView
+    android:layout_marginLeft="@dimen/_10sdp"
+    android:layout_above="@id/leftCropTwo"
+    android:scaleType="centerInside"
+    android:layout_below="@id/logo"
+    android:src="@drawable/logo_name"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"></ImageView>
+    <ImageView
+        android:layout_marginLeft="-15dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/leftCropTwo"
+        android:scaleType="fitCenter"
+        android:src="@drawable/drop_circle_two"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"></ImageView>
+
+    <ImageView
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/frm"
+        android:src="@drawable/right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></ImageView>
+</RelativeLayout>

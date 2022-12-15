@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+<RelativeLayout
+    android:background="@drawable/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+        <RelativeLayout
+            android:id="@+id/rlHeader"
+            android:background="@color/sign_up_color"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp">
+            <ImageView
+                android:id="@+id/imgBack"
+                android:layout_centerVertical="true"
+                android:scaleType="center"
+                android:src="@drawable/back_white"
+                android:layout_width="@dimen/_45sdp"
+                android:layout_height="match_parent">
+            </ImageView>
+
+            <TextView
+                android:layout_toRightOf="@id/imgBack"
+                android:textSize="@dimen/_13ssp"
+                android:paddingLeft="@dimen/_10sdp"
+                android:fontFamily="@font/popins_semi_bold"
+                android:textColor="@color/white"
+                android:text="Send Documents"
+                android:layout_centerVertical="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+
+        </RelativeLayout>
+
+    <androidx.core.widget.NestedScrollView
+       android:layout_above="@id/btnSend"
+        android:layout_below="@id/rlHeader"
+        android:fillViewport="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:hint="Title"
+        android:id="@+id/edtTitle"
+        android:singleLine="true"
+        android:maxLength="100"
+        android:layout_margin="@dimen/_15sdp"
+        android:layout_below="@id/rlHeader"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/_13ssp"
+        android:paddingLeft="@dimen/_10sdp"
+        android:fontFamily="@font/popins_regular"
+        android:background="@drawable/white_text_box"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:hint="Body"
+        android:id="@+id/edtBody"
+        android:padding="@dimen/_5sdp"
+        android:gravity="top"
+        android:singleLine="true"
+        android:layout_marginRight="@dimen/_15sdp"
+        android:layout_marginLeft="@dimen/_15sdp"
+        android:layout_below="@id/edtTitle"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/_13ssp"
+        android:paddingLeft="@dimen/_10sdp"
+        android:fontFamily="@font/popins_regular"
+        android:background="@drawable/white_text_box"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_80sdp" />
+
+    <Spinner
+        android:id="@+id/spCategory"
+        android:layout_below="@id/edtBody"
+        android:layout_margin="@dimen/_15sdp"
+        android:background="@drawable/white_text_box"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp" />
+    <RelativeLayout
+        android:id="@+id/rlImageUpload"
+        android:gravity="center"
+        android:layout_marginRight="@dimen/_15sdp"
+        android:layout_marginLeft="@dimen/_15sdp"
+        android:layout_below="@id/spCategory"
+        android:background="@drawable/white_text_box"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_80sdp">
+        <ImageView
+            android:src="@drawable/upload_image"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"></ImageView>
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvImages"
+        android:visibility="gone"
+        android:layout_below="@id/spCategory"
+        android:layout_margin="@dimen/_10sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></androidx.recyclerview.widget.RecyclerView>
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:visibility="invisible"
+        android:layout_gravity="right"
+        android:textColor="@color/white"
+        android:text="Add More"
+        android:id="@+id/btnAddMore"
+        android:shadowColor="#E2561980"
+        app:rippleColor="@color/orange"
+        app:backgroundTint="#E25619"
+        android:textAllCaps="false"
+        android:textSize="@dimen/_13ssp"
+        android:fontFamily="@font/regular_tensor"
+        android:layout_margin="@dimen/_20sdp"
+        app:cornerRadius="@dimen/_20sdp"
+        android:layout_height="@dimen/_45sdp" />
+    </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/white"
+        android:text="Send Document"
+        android:id="@+id/btnSend"
+        android:shadowColor="#E2561980"
+        app:rippleColor="@color/orange"
+        app:backgroundTint="#E25619"
+        android:textAllCaps="false"
+        android:textSize="@dimen/_13ssp"
+        android:fontFamily="@font/regular_tensor"
+        android:layout_margin="@dimen/_20sdp"
+        app:cornerRadius="@dimen/_20sdp"
+        android:layout_height="@dimen/_45sdp" />
+
+
+</RelativeLayout>
+</layout>

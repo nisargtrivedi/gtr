@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+<RelativeLayout
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+        <RelativeLayout
+            android:id="@+id/rlHeader"
+            android:background="@color/sign_up_color"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp">
+
+            <ImageView
+                android:id="@+id/imgBack"
+                android:layout_centerVertical="true"
+                android:scaleType="center"
+                android:src="@drawable/back_white"
+                android:layout_width="@dimen/_45sdp"
+                android:layout_height="match_parent">
+            </ImageView>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvCategory"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/imgBack"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+        </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:background="#0AFD4101"
+        android:layout_below="@id/rlHeader"
+        android:id="@+id/rvMessage"
+        tools:listitem="@layout/row_received"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ImageView
+        android:visibility="invisible"
+        android:id="@+id/imgSendDocument"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="@dimen/_30sdp"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/ic_right"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"></ImageView>
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tvMsg"
+        android:gravity="center"
+        android:textSize="@dimen/_13ssp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/popins_semi_bold"
+        android:text="No Message Found."
+        android:layout_below="@id/rlHeader"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</RelativeLayout>
+</layout>

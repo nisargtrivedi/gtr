@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+<RelativeLayout
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+        <RelativeLayout
+            android:id="@+id/rlHeader"
+            android:background="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp">
+
+            <ImageView
+                android:id="@+id/imgBack"
+                android:layout_centerVertical="true"
+                android:scaleType="center"
+                android:src="@drawable/back_white"
+                android:layout_width="@dimen/_45sdp"
+                android:layout_height="match_parent">
+            </ImageView>
+            <TextView
+                android:layout_toRightOf="@id/imgBack"
+                android:textSize="@dimen/_13ssp"
+                android:paddingLeft="@dimen/_10sdp"
+                android:fontFamily="@font/popins_regular"
+                android:textColor="@color/white"
+                android:text="Messages"
+                android:layout_centerVertical="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+
+        </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@id/rlHeader"
+        tools:listitem="@layout/row_message_files"
+        android:id="@+id/rvMessage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </androidx.recyclerview.widget.RecyclerView>
+    <TextView
+        android:visibility="gone"
+        android:textSize="@dimen/_13ssp"
+        android:gravity="center"
+        android:fontFamily="@font/popins_semi_bold"
+        android:id="@+id/tvNoDocument"
+        android:textColor="@color/black"
+        android:text="No Documents Found."
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </TextView>
+  </RelativeLayout>
+</layout>

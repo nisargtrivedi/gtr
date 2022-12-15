@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <RelativeLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <FrameLayout
+            android:id="@+id/frm"
+            android:background="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_130sdp">
+            <ImageView
+                android:id="@+id/imgBack"
+                android:scaleType="center"
+                android:src="@drawable/back_white"
+                android:layout_width="@dimen/_45sdp"
+                android:layout_height="@dimen/_50sdp">
+            </ImageView>
+        </FrameLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_marginRight="@dimen/_20sdp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            tools:listitem="@layout/row_image"
+            android:id="@+id/rvImages"
+            android:layout_below="@id/frm"
+            android:layout_marginTop="-80dp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_130sdp">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <TextView
+            android:textColor="@color/black"
+            android:text="N/a"
+            android:paddingLeft="@dimen/_10sdp"
+            android:textSize="@dimen/_13ssp"
+            android:fontFamily="@font/popins_semi_bold"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_below="@id/rvImages"
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textColor="@color/black"
+            android:text="N/a"
+            android:paddingLeft="@dimen/_10sdp"
+            android:textSize="@dimen/_12ssp"
+            android:fontFamily="@font/popins_semi_bold"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_below="@id/tvTitle"
+            android:id="@+id/tvBody"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+
+    </RelativeLayout>
+</layout>

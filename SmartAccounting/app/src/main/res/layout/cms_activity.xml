@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<LinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout
+    android:id="@+id/rlHeader"
+    android:background="@color/sign_up_color"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_50sdp">
+    <ImageView
+        android:id="@+id/imgBack"
+        android:layout_centerVertical="true"
+        android:scaleType="center"
+        android:src="@drawable/back_white"
+        android:layout_width="@dimen/_45sdp"
+        android:layout_height="match_parent">
+    </ImageView>
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_toRightOf="@id/imgBack"
+        android:textSize="@dimen/_13ssp"
+        android:paddingRight="@dimen/_10sdp"
+        android:paddingLeft="@dimen/_10sdp"
+        android:fontFamily="@font/popins_semi_bold"
+        android:textColor="@color/white"
+        android:text="Settings"
+        android:layout_centerVertical="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </TextView>
+
+
+</RelativeLayout>
+    <androidx.core.widget.NestedScrollView
+        android:fillViewport="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:textColor="@color/black"
+            android:textSize="@dimen/_13ssp"
+            android:fontFamily="@font/popins_regular"
+            android:layout_margin="@dimen/_10sdp"
+            android:id="@+id/tvContent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </TextView>
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>
+</layout>

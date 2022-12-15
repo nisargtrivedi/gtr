@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout  xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+<RelativeLayout
+android:background="@color/black"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<RelativeLayout
+    android:background="@drawable/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_marginTop="@dimen/_100sdp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:textFontWeight="400"
+            android:textSize="@dimen/_20ssp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/regular_tensor"
+            android:text="@string/create_account"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textFontWeight="400"
+            android:textSize="@dimen/_13ssp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/regular_tensor"
+            android:text="@string/enter_your_information_below_or_continue_with_social_media_account"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:drawableLeft="@drawable/email"
+            android:drawablePadding="@dimen/_6sdp"
+            android:id="@+id/edtUsername"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:hint="Enter your username"
+            android:paddingLeft="@dimen/_10sdp"
+            android:inputType="textEmailAddress"
+            android:textColorHint="@color/text_color"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/_13ssp"
+            android:fontFamily="@font/regular_tensor"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:background="@drawable/white_text_box"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp">
+
+        </androidx.appcompat.widget.AppCompatEditText>
+
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:drawableLeft="@drawable/email"
+            android:id="@+id/edtEmail"
+            android:drawablePadding="@dimen/_6sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:hint="@string/your_email_address"
+            android:paddingLeft="@dimen/_10sdp"
+            android:inputType="textEmailAddress"
+            android:textColorHint="@color/text_color"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/_13ssp"
+            android:fontFamily="@font/regular_tensor"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:background="@drawable/white_text_box"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp">
+
+        </androidx.appcompat.widget.AppCompatEditText>
+
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:drawableLeft="@drawable/mobile_ic"
+            android:drawablePadding="@dimen/_10sdp"
+            android:id="@+id/edtMobile"
+            android:maxLength="10"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:hint="Your mobile number"
+            android:paddingLeft="@dimen/_10sdp"
+            android:inputType="number"
+            android:textColorHint="@color/text_color"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/_13ssp"
+            android:fontFamily="@font/regular_tensor"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:background="@drawable/white_text_box"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp">
+
+        </androidx.appcompat.widget.AppCompatEditText>
+
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:drawableLeft="@drawable/lock"
+            android:drawablePadding="@dimen/_6sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:hint="Create password"
+            android:id="@+id/edtPassword"
+            android:paddingRight="@dimen/_10sdp"
+            android:drawableRight="@drawable/eye_ic"
+            android:paddingLeft="@dimen/_10sdp"
+            android:inputType="textPassword"
+            android:textColorHint="@color/text_color"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/_13ssp"
+            android:fontFamily="@font/regular_tensor"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:background="@drawable/white_text_box"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp">
+
+        </androidx.appcompat.widget.AppCompatEditText>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:drawableLeft="@drawable/lock"
+            android:drawablePadding="@dimen/_6sdp"
+            android:id="@+id/edtConfirmPassword"
+            android:paddingRight="@dimen/_10sdp"
+            android:drawableRight="@drawable/eye_ic"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:hint="Confirm password"
+            android:paddingLeft="@dimen/_10sdp"
+            android:inputType="textPassword"
+            android:textColorHint="@color/text_color"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/_13ssp"
+            android:fontFamily="@font/regular_tensor"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:background="@drawable/white_text_box"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp">
+
+        </androidx.appcompat.widget.AppCompatEditText>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:textColor="@color/white"
+            android:text="Create Account"
+            android:id="@+id/btnRegister"
+            android:shadowColor="#E2561980"
+            app:rippleColor="#E92525"
+            app:backgroundTint="#E25619"
+            android:textAllCaps="false"
+            android:textSize="@dimen/_13ssp"
+            android:fontFamily="@font/regular_tensor"
+            android:layout_margin="@dimen/_20sdp"
+            app:cornerRadius="@dimen/_20sdp"
+            android:layout_height="@dimen/_45sdp" />
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/btnLogin"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:textFontWeight="400"
+        android:textSize="@dimen/_13ssp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:fontFamily="@font/regular_tensor"
+        android:text="@string/already_account"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
+</RelativeLayout>
+</layout>

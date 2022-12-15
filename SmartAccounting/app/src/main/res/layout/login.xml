@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+<RelativeLayout
+android:background="@color/black"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<RelativeLayout
+    android:background="@drawable/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_60sdp"
+        android:background="@drawable/oveal_shape"
+        android:id="@+id/logo"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_100sdp">
+        <ImageView
+            android:layout_gravity="center|top"
+            android:scaleType="centerInside"
+            android:src="@drawable/logo_white"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_60sdp"></ImageView>
+
+    </FrameLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginTop="-50dp"
+        android:layout_below="@id/logo"
+        android:background="@drawable/round_corner_login"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:textFontWeight="400"
+            android:textSize="@dimen/_20ssp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/regular_tensor"
+            android:text="@string/login"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textFontWeight="400"
+            android:textSize="@dimen/_13ssp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/regular_tensor"
+            android:text="@string/welcome_back_nplease_login_to_continue"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:drawableLeft="@drawable/email"
+            android:drawablePadding="@dimen/_6sdp"
+            android:id="@+id/edtEmail"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:hint="@string/your_email_address"
+            android:paddingLeft="@dimen/_10sdp"
+            android:inputType="textEmailAddress"
+            android:textColorHint="@color/text_color"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/_13ssp"
+            android:fontFamily="@font/regular_tensor"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:background="@drawable/white_text_box"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp">
+
+        </androidx.appcompat.widget.AppCompatEditText>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:drawableLeft="@drawable/lock"
+            android:paddingRight="@dimen/_10sdp"
+            android:id="@+id/edtPassword"
+            android:drawableRight="@drawable/eye_ic"
+            android:drawablePadding="@dimen/_6sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:hint="Enter your password"
+            android:paddingLeft="@dimen/_10sdp"
+            android:inputType="textPassword"
+            android:textColorHint="@color/text_color"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/_13ssp"
+            android:fontFamily="@font/regular_tensor"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:background="@drawable/white_text_box"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp">
+
+        </androidx.appcompat.widget.AppCompatEditText>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:textColor="@color/white"
+            android:text="Login"
+            android:id="@+id/btnLogin"
+            android:shadowColor="#E2561980"
+            app:rippleColor="@color/orange"
+            app:backgroundTint="#E25619"
+            android:textAllCaps="false"
+            android:textSize="@dimen/_13ssp"
+            android:fontFamily="@font/regular_tensor"
+            android:layout_margin="@dimen/_20sdp"
+            app:cornerRadius="@dimen/_20sdp"
+            android:layout_height="@dimen/_45sdp" />
+        <TextView
+            android:id="@+id/btnForgotPassword"
+            android:textFontWeight="400"
+            android:textSize="@dimen/_13ssp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:fontFamily="@font/regular_tensor"
+            android:text="Forgot Password"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginTop="@dimen/_10sdp"
+            android:textFontWeight="400"
+            android:textSize="@dimen/_13ssp"
+            android:textColor="@color/sign_up_color"
+            android:gravity="center"
+            android:fontFamily="@font/regular_tensor"
+            android:text="About Us"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/btnSignUp"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:textFontWeight="400"
+        android:textSize="@dimen/_13ssp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:fontFamily="@font/regular_tensor"
+        android:text="@string/don_t_have_an_account"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
+</RelativeLayout>
+</layout>

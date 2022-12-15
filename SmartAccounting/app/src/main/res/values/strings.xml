@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">GTR</string>
+    <string name="login">Login</string>
+    <string name="welcome_back_nplease_login_to_continue">Welcome back!\nPlease login to continue</string>
+    <string name="your_email_address">Enter Your email address</string>
+    <string name="don_t_have_an_account">Don’t have an account?<font color='#FD4101'> Create Now</font></string>
+    <string name="already_account">Already have an account?<font color='#FD4101'> Login Now</font></string>
+
+    <string name="create_account">Create Account</string>
+    <string name="enter_your_information_below_or_continue_with_social_media_account">Enter your information below or continue with social media account</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="welcome">Welcome</string>
+    <string name="john_carter">John Carter</string>
+    <string name="message">Message</string>
+    <string name="received">Received</string>
+    <string name="sent">Sent</string>
+    <string name="no_net">No Internet connection is available</string>
+    <string name="change_password">Change Password</string>
+    <string name="title_activity_home">Home</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">My Profile</string>
+    <string name="menu_slideshow">Messages</string>
+    <string name="menu_all_document">All Document</string>
+    <string name="menu_logout">Logout</string>
+
+</resources>

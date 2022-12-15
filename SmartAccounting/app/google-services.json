@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "118473079852",
+    "project_id": "gtr-project-77730",
+    "storage_bucket": "gtr-project-77730.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:118473079852:android:1be317b5befdb8f470e589",
+        "android_client_info": {
+          "package_name": "com.app.smartaccounting"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "118473079852-r88ud90hp8pfevtg7ovn2f56u8a19knc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCMIN7Uex6-2pCYE9dtELqzsMDdyblOQpA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "118473079852-r88ud90hp8pfevtg7ovn2f56u8a19knc.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "118473079852-2tcr4s8pe0rubstdep4in9alsotgn42n.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.Codeflix.GTR"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
